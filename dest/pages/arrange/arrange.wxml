@@ -1,0 +1,4 @@
+<!--pages/arrange/arrange.wxml-->
+<view class="pageMain">
+  <view class="content"> arrange </view>
+</view>

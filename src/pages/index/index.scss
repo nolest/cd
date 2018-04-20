@@ -1,0 +1,57 @@
+/**index.wxss**/
+page{
+  background:#FFF;
+ 
+}
+.pageMain{
+  font-size: 30rpx;
+  color: #333;
+  background:#FFF;
+  .timer{
+    background: #f2f2f2;
+    height: 88rpx;
+  }
+  .session{
+    padding: 30rpx;
+      .box{
+        width : 88rpx;
+        height: 88rpx;
+        border :8rpx solid rgb(113, 105, 226);
+        &.empty{
+          border :8rpx solid rgb(248, 231, 76);
+        }
+      }
+  }
+  .exp{
+    padding:40rpx;
+    background: #f2f2f2;
+  }
+  .choose{
+    padding: 20rpx;
+    .item{
+      width : 88rpx;
+      height: 88rpx;
+      margin: 10rpx 16rpx 10rpx 16rpx;
+    }
+  }
+}
+.wrong_fade{
+  &.now{
+    transform : scale(1,1);
+    background-color:rgba(0,0,0,0.6);
+  }
+  transition:background-color 0.4s,transform 0.2s;
+  transform : scale(0,0);
+  background-color:rgba(0,0,0,0);
+  position:fixed;
+  top:0px;
+  z-index: 999;
+  .pannel{
+    padding: 40rpx;
+    background: #FFF;
+    border-radius:4rpx;
+    .title{
+      color: #333;
+    }
+  }
+}

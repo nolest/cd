@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="ds-flex flex-v pageMain">
+  <view class="ds-flex pack-center align-center timer">倒计时20</view>
+  <view class="ds-flex pack-around session">
+    <block wx:for="{{ word }}">
+      <view class="ds-flex pack-center align-center box" wx:if="{{ index != empty }}">{{ item }}</view>
+      <view class="ds-flex pack-center align-center box empty" wx:else></view>
+    </block>
+  </view>
+  <view class="ds-flex exp">
+    <text>蝉变为成虫时要脱去一层壳。比喻用计脱身，使人不能及时发觉。</text>
+  </view>
+  <view class="ds-flex pack-center wrap-wp choose">
+    <view class="ds-flex pack-center align-center item" bindtap="choose" wx:for="{{ choose }}" data-index="{{ index }}"style="border:8rpx solid rgb({{ vector[0][index] }},{{ vector[1][index] }},{{ vector[2][index] }})">{{ item }}</view>
+  </view>
+</view>
+<view class="ds-flex flex-v pack-center align-center wrong_fade {{ show_wrong_fade?'now':'' }}" style="height:{{ window.windowHeight }}px;width:{{ window.windowWidth }}px" bindtap='close'>
+  <view class="ds-flex flex-v pack-between pannel" style="width:{{ window.windowWidth-90 }}px;">
+    <view class="ds-flex title pack-center">回答错误</view>
+    <view class="ds-flex pack-center">分享后继续学习</view>
+  </view>
+</view>

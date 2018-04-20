@@ -1,0 +1,45 @@
+/**index.wxss**/
+page {
+  background: #FFF; }
+
+.pageMain {
+  font-size: 30rpx;
+  color: #333;
+  background: #FFF; }
+  .pageMain .timer {
+    background: #f2f2f2;
+    height: 88rpx; }
+  .pageMain .session {
+    padding: 30rpx; }
+    .pageMain .session .box {
+      width: 88rpx;
+      height: 88rpx;
+      border: 8rpx solid #7169e2; }
+      .pageMain .session .box.empty {
+        border: 8rpx solid #f8e74c; }
+  .pageMain .exp {
+    padding: 40rpx;
+    background: #f2f2f2; }
+  .pageMain .choose {
+    padding: 20rpx; }
+    .pageMain .choose .item {
+      width: 88rpx;
+      height: 88rpx;
+      margin: 10rpx 16rpx 10rpx 16rpx; }
+
+.wrong_fade {
+  transition: background-color 0.4s,transform 0.2s;
+  transform: scale(0, 0);
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  z-index: 999; }
+  .wrong_fade.now {
+    transform: scale(1, 1);
+    background-color: rgba(0, 0, 0, 0.6); }
+  .wrong_fade .pannel {
+    padding: 40rpx;
+    background: #FFF;
+    border-radius: 4rpx; }
+    .wrong_fade .pannel .title {
+      color: #333; }

@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "成语知多少",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  }
+}
